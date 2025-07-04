@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Navigo";
+  src: url("../fonts/Navigo-Bold.woff2") format("woff2"),
+    url("../fonts/Navigo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos Text";
+  src: url("../fonts/GolosText-Regular.woff2") format("woff2"),
+    url("../fonts/GolosText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos Text";
+  src: url("../fonts/GolosText-Bold.woff2") format("woff2"),
+    url("../fonts/GolosText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Navigo";
+  src: url("../fonts/Navigo-Regular.woff2") format("woff2"),
+    url("../fonts/Navigo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Navigo", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 17px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img,svg{
+    display: block;
+    max-width: 100%;
+}
+
+.header {
+  &__inner {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+}
+
+.step {
+  display: none;
+
+  &__title {
+    margin-bottom: 30px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: calc(24/18);
+  }
+}
+
+.step.active {
+  display: block;
+}
+
+.progress-top,
+.progress-bottom {
+  height: 8px;
+  background: #eee;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.progress-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+button#next {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

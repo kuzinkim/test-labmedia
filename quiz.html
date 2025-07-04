@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Квиз</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .progress-container {
+      height: 6px;
+      background: #ddd;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #4caf50;
+      transition: width 0.3s ease;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .question-title {
+      font-weight: bold;
+    }
+
+    .answers label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f44336;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      background: #d32f2f;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .result {
+      font-size: 18px;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .result.good {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+
+    .result.bad {
+      background: #ffebee;
+      color: #c62828;
+    }
+
+    .result span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Прогресс -->
+<div class="progress-container">
+  <div class="progress-bar" id="quizProgress"></div>
+</div>
+
+<div class="container" id="quizApp">
+  <div id="startScreen">
+    <h2>Пройди тест</h2>
+    <p>Всего 10 вопросов. Проверь свои знания!</p>
+    <button class="button" id="startBtn">Начать</button>
+  </div>
+
+  <div id="questionScreen" class="hidden">
+    <div class="question-title" id="questionText"></div>
+    <div class="answers" id="answersContainer"></div>
+    <button class="button" id="nextBtn" disabled>Далее</button>
+  </div>
+
+  <div id="resultScreen" class="hidden">
+    <div id="resultMessage" class="result"></div>
+    <button class="button" id="restartBtn">Пройти ещё раз</button>
+  </div>
+</div>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

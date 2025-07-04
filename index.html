@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5 шагов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__burger">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 23H29V26H3V23Z" fill="#73BE43" />
+                        <path d="M3 15H29V18H3V15Z" fill="#73BE43" />
+                        <path d="M3 15H16V18H3V15Z" fill="#E9262D" />
+                        <path d="M3 7H29V10H3V7Z" fill="#E9262D" />
+                    </svg>
+                </div>
+                <p>Текст</p>
+            </div>
+        </div>
+    </header>
+    <div class="progress-top">
+        <div class="progress-bar" id="stepProgress"></div>
+    </div>
+
+    <div class="container">
+        <!-- Шаг 1 -->
+        <div class="step" data-step="1">
+            <h2 class="step__title">Табы</h2>
+            <div class="tabs-container">
+                <div class="tabs-list">
+                    <button data-tab="1" class="active">Таб 1</button>
+                    <button data-tab="2">Таб 2</button>
+                    <button data-tab="3">Таб 3</button>
+                    <button data-tab="4">Таб 4</button>
+                </div>
+                <div class="tab-content" id="tabContent">
+                    <div data-tab="1">
+                        <ol>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div data-tab="2" style="display:none;">
+                        <ol>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div data-tab="3" style="display:none;">
+                        <ol>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div data-tab="4" style="display:none;">
+                        <ol>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                            <li>Заголовок нумерованного списка
+                                <ul>
+                                    <li>Элемент 1</li>
+                                    <li>Элемент 2</li>
+                                    <li>Элемент 3</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bottom">
+                <div class="progress-bar" id="innerProgress"></div>
+            </div>
+        </div>
+
+        <!-- Шаг 2 -->
+        <div class="step " data-step="2">
+            <h2 class="step__title">Слайдер</h2>
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider__img">
+                                <picture>
+                                    <img src="img/slide_pic.jpg" alt="img">
+                                </picture>
+                            </div>
+                            <p>Текск 1</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__img">
+                                <picture>
+                                    <img src="img/slide_pic.jpg" alt="img">
+                                </picture>
+                            </div>
+                            <p>Текск 2</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__img">
+                                <picture>
+                                    <img src="img/slide_pic.jpg" alt="img">
+                                </picture>
+                            </div>
+                            <p>Текск 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="swiper-button-prev arrow-left">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.7071 11.3737C15.0976 10.9832 15.0976 10.35 14.7071 9.95952C14.3166 9.56899 13.6834 9.56899 13.2929 9.95952L7.95955 15.2929C7.76429 15.4881 7.66666 15.744 7.66666 16C7.66666 16.1355 7.69364 16.2648 7.74254 16.3827C7.79134 16.5007 7.86367 16.6112 7.95955 16.7071L13.2929 22.0404C13.6834 22.4309 14.3166 22.4309 14.7071 22.0404C15.0976 21.6499 15.0976 21.0167 14.7071 20.6262L11.0809 17H24C24.5523 17 25 16.5522 25 16C25 15.4477 24.5523 15 24 15H11.0809L14.7071 11.3737Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination pagination"></div>
+                    <div class="swiper-button-next arrow-right">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9595 11.3737C17.569 10.9832 17.569 10.35 17.9595 9.95952C18.35 9.56899 18.9832 9.56899 19.3737 9.95952L24.7071 15.2929C25.0976 15.6834 25.0976 16.3165 24.7071 16.7071L19.3737 22.0404C18.9832 22.4309 18.35 22.4309 17.9595 22.0404C17.569 21.6499 17.569 21.0167 17.9595 20.6262L21.5857 17H8.66663C8.11434 17 7.66663 16.5522 7.66663 16C7.66663 15.4477 8.11434 15 8.66663 15H21.5857L17.9595 11.3737Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-bottom">
+                <div class="progress-bar" id="sliderProgress"></div>
+            </div>
+        </div>
+
+        <!-- Шаг 3 -->
+        <div class="step" data-step="3">
+            <h2 class="step__title">Аккордеон</h2>
+            <div class="accordion">
+                <div class="item">
+                    <div class="acc-btn">
+                        <span>Таб 1</span>
+                        <div class="acc-btn__arrow">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="9"
+                                    width="24" height="13">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M27.3555 10.3516L26.6484 9.64453L16.0019 20.291L5.35547 9.64453L4.64836 10.3516L16.0019 21.7052L27.3555 10.3516Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_2_64)">
+                                    <rect width="32" height="32" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 32 0)"
+                                        fill="#E9262D" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-content">
+                        <ul>
+                            <li>Элемент 1</li>
+                            <li>Элемент 2</li>
+                            <li>Элемент 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-btn">
+                        <span>Таб 2</span>
+                        <div class="acc-btn__arrow">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="9"
+                                    width="24" height="13">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M27.3555 10.3516L26.6484 9.64453L16.0019 20.291L5.35547 9.64453L4.64836 10.3516L16.0019 21.7052L27.3555 10.3516Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_2_64)">
+                                    <rect width="32" height="32" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 32 0)"
+                                        fill="#E9262D" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-content">
+                        <ul>
+                            <li>Элемент 1</li>
+                            <li>Элемент 2</li>
+                            <li>Элемент 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-btn">
+                        <span>Таб 2</span>
+                        <div class="acc-btn__arrow">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="9"
+                                    width="24" height="13">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M27.3555 10.3516L26.6484 9.64453L16.0019 20.291L5.35547 9.64453L4.64836 10.3516L16.0019 21.7052L27.3555 10.3516Z"
+                                        fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_2_64)">
+                                    <rect width="32" height="32" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 32 0)"
+                                        fill="#E9262D" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-content">
+                        <ul>
+                            <li>Элемент 1</li>
+                            <li>Элемент 2</li>
+                            <li>Элемент 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bottom">
+                <div class="progress-bar" id="accordionProgress"></div>
+            </div>
+        </div>
+
+        <!-- Шаг 4 -->
+        <div class="step" data-step="4">
+            <h2 class="step__title">Флип-карточки</h2>
+            <div class="flip-container">
+                <div class="card" data-index="1">
+                    <div class="card-front">
+                        <div class="card-front-pic">
+                            <picture>
+                                <img src="img/card.png" alt="">
+                            </picture>
+                        </div>
+                        <h3>Full-Array Local Dimming</h3>
+                        <p>ZG9 AG9 AG8 XG95 XG85 XG80 XG70 WG6 </p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Backlight Master Dive</h3>
+                        <p>Обеспечивает глубокий черный цвет и отсутствие засветки вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального затемнения.</p>
+                    </div>
+                    <button class="flip-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 7.53846C18.6579 7.53846 21.0329 8.73615 22.6028 10.6154H24.5252C22.7277 7.83976 19.5812 6 16 6C10.5196 6 6.05718 10.3085 5.88948 15.6861L4.10041 13.9175L3 15.0054L6.66264 18.6262L10.3253 15.0054L9.22487 13.9175L7.447 15.6751C7.61973 11.1525 11.3829 7.53846 16 7.53846Z" fill="#5B656D"/>
+                            <path d="M9.39746 21.3846H7.475C9.27254 24.1602 12.4191 26 16.0002 26C21.4805 26 25.9429 21.6916 26.1108 16.3141L27.8996 18.0825L29 16.9946L25.3374 13.3738L21.6747 16.9946L22.7751 18.0825L24.5532 16.3247C24.3807 20.8474 20.6174 24.4615 16.0002 24.4615C13.3423 24.4615 10.9674 23.2639 9.39746 21.3846Z" fill="#5B656D"/>
+                            </svg>
+                    </button>
+                </div>
+                <div class="card" data-index="2">
+                    <div class="card-front">
+                        <div class="card-front-pic">
+                            <picture>
+                                <img src="img/card.png" alt="">
+                            </picture>
+                        </div>
+                        <h3>Full-Array Local Dimming</h3>
+                        <p>ZG9 AG9 AG8 XG95 XG85 XG80 XG70 WG6 </p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Backlight Master Dive</h3>
+                        <p>Обеспечивает глубокий черный цвет и отсутствие засветки вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального затемнения.</p>
+                    </div>
+                    <button class="flip-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 7.53846C18.6579 7.53846 21.0329 8.73615 22.6028 10.6154H24.5252C22.7277 7.83976 19.5812 6 16 6C10.5196 6 6.05718 10.3085 5.88948 15.6861L4.10041 13.9175L3 15.0054L6.66264 18.6262L10.3253 15.0054L9.22487 13.9175L7.447 15.6751C7.61973 11.1525 11.3829 7.53846 16 7.53846Z" fill="#5B656D"/>
+                            <path d="M9.39746 21.3846H7.475C9.27254 24.1602 12.4191 26 16.0002 26C21.4805 26 25.9429 21.6916 26.1108 16.3141L27.8996 18.0825L29 16.9946L25.3374 13.3738L21.6747 16.9946L22.7751 18.0825L24.5532 16.3247C24.3807 20.8474 20.6174 24.4615 16.0002 24.4615C13.3423 24.4615 10.9674 23.2639 9.39746 21.3846Z" fill="#5B656D"/>
+                            </svg>
+                    </button>
+                </div>
+                <div class="card" data-index="3">
+                    <div class="card-front">
+                        <div class="card-front-pic">
+                            <picture>
+                                <img src="img/card.png" alt="">
+                            </picture>
+                        </div>
+                        <h3>Full-Array Local Dimming</h3>
+                        <p>ZG9 AG9 AG8 XG95 XG85 XG80 XG70 WG6 </p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Backlight Master Dive</h3>
+                        <p>Обеспечивает глубокий черный цвет и отсутствие засветки вокруг ярких объектов. Отличается сверхплотным расположением светодиодов, управлением каждым из них и интеллектуальным алгоритмом локального затемнения.</p>
+                    </div>
+                    <button class="flip-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 7.53846C18.6579 7.53846 21.0329 8.73615 22.6028 10.6154H24.5252C22.7277 7.83976 19.5812 6 16 6C10.5196 6 6.05718 10.3085 5.88948 15.6861L4.10041 13.9175L3 15.0054L6.66264 18.6262L10.3253 15.0054L9.22487 13.9175L7.447 15.6751C7.61973 11.1525 11.3829 7.53846 16 7.53846Z" fill="#5B656D"/>
+                            <path d="M9.39746 21.3846H7.475C9.27254 24.1602 12.4191 26 16.0002 26C21.4805 26 25.9429 21.6916 26.1108 16.3141L27.8996 18.0825L29 16.9946L25.3374 13.3738L21.6747 16.9946L22.7751 18.0825L24.5532 16.3247C24.3807 20.8474 20.6174 24.4615 16.0002 24.4615C13.3423 24.4615 10.9674 23.2639 9.39746 21.3846Z" fill="#5B656D"/>
+                            </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="progress-bottom">
+                <div class="progress-bar" id="flipProgress"></div>
+            </div>
+        </div>
+        <button id="next" disabled>Продолжить</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
